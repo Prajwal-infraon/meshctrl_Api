@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fastapi": "^0.0.8",
+    "minimist": "^1.2.8",
+    "ws": "^8.14.2"
+  }
+}
