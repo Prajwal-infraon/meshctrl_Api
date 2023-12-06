@@ -22,10 +22,6 @@ def processForUrl(node_info):
             group_id = data[0].get("mesh_id","")
             node_id = getNodeID(node_info)
             device_id = node_id[6:]
-            # print("$$$$$$",device_id)
-            # node_info = powerstatus(**node_info.dict())
-            # node_info.group_id = group_id
-            # print(node_info.group_id)
             status = powcheck(group_id,device_id)
         if status == 1:
             raw_query = collection.find({"org_id": node_info.organization})
